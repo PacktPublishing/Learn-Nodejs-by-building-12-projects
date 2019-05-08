@@ -1,0 +1,32 @@
+{>"layouts/manage" /}
+
+{<body}
+	<h2>Categories</h2>
+	<p><a href="/manage/categories/add">Add Category</a></p>
+	<table>
+	  <thead>
+	    <tr>
+	      <th width="200">ID</th>
+	      <th width="200">Category Name</th>
+	      <th width="180"></th>
+	      <th width="180"></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  	{#categories}
+	    <tr>
+	      <td>{._id}</td>
+	      <td>{.name}</td>
+	      <td><a class="button" href="/manage/categories/edit/{._id}">Edit</a></td>
+	      <td>
+	      	 <form method="post" action="/manage/categories/delete/{._id}">
+	      	<input type="submit" value="Delete" class="button alert" />
+	      	<input type="hidden" name="_csrf" value="{_csrf}" />
+	      	<input type="hidden" name="_method" value="DELETE" />
+	      </form>
+	      </td>
+	    </tr>
+	    {/categories}
+	  </tbody>
+	</table>
+{/body}

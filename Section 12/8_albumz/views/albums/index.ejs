@@ -1,0 +1,17 @@
+<% include ../partials/header %>
+	<h1>My Albums 
+	<a href="/albums/add" class="btn btn-success pull-right">Add Album</a>
+	</h1>
+
+	<div class="row albums">
+		<% for(var i=0; i<albums.length; i++) {%>
+   			<div class="col-md-4 albums">
+   				<a href="/albums/details/<%=albums[i].id %>">
+   				<img src="/images/uploads/<%= albums[i].cover %>"></a>
+   				<h4 class="album-title text-center"><%= albums[i].title %></h4>
+   				<p class="artist-name text-center"><%= albums[i].artist %></p>
+			</div>
+		<% } %>
+	</div>
+
+<% include ../partials/footer %>

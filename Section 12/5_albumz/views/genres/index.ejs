@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+	<h1>Genres
+		<a href="/genres/add" class="btn btn-success pull-right">Add Genre</a>
+	</h1>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% for(var i=0;i < genres.length;i++) { %>
+				<tr>
+					<td><%= genres[i].name %></td>
+					<td>
+						<a href="/genres/edit/<%= genres[i].id %>" class="btn btn-default">Edit</a>
+
+						<a data-id="<%= genres[i].id %>" class="btn btn-danger delete-genre">Delete</a>
+					</td>
+				</tr>
+			<% } %>
+		</tbody>
+	</table>
+<% include ../partials/footer %>

@@ -1,0 +1,36 @@
+ul, li{
+	list-style: none;
+}
+
+.top-bar{
+	margin-bottom:20px;
+}
+
+.book{
+	text-align: center;
+}
+
+.book h4{
+	margin-top: 15px;
+}
+
+.price{
+	margin:5px;
+	font-size:18px;
+}
+
+.price span{
+	color:green;
+	background:#f4f4f4;
+	padding:10px;
+	border: 1px #ccc solid;
+	border-radius: 50%;
+}
+
+footer{
+	margin-top: 40px;
+	padding:10px;
+	text-align: center;
+}
+
+h2 span{font-size:18px;}

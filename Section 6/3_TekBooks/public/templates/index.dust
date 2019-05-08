@@ -1,0 +1,36 @@
+{>"layouts/master" /}
+
+{<body}
+  	<div class="large-3 columns book">
+  		<img src="/img/node1.jpg">
+  		<h4>Professional Node.js</h4>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  		<div class="price">Buy it for <span>$19.99</span></div>
+  		<br>
+  		<a href="/books/details/1" class="button small">Book Details</a>
+  	</div>
+  	<div class="large-3 columns book">
+  		<img src="/img/node2.jpg">
+  		<h4>Node.js Blueprints</h4>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  		<div class="price">Buy it for <span>$29.99</span></div>
+  		<br>
+  		<a href="/books/details/1" class="button small">Book Details</a>
+  	</div>
+  	<div class="large-3 columns book">
+  		<img src="/img/node3.jpg">
+  		<h4>Node Web Development</h4>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  		<div class="price">Buy it for <span>$17.99</span></div>
+  		<br>
+  		<a href="/books/details/1" class="button small">Book Details</a>
+  	</div>
+  	<div class="large-3 columns book">
+  		<img src="/img/node4.jpg">
+  		<h4>Intro to Node.js</h4>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  		<div class="price">Buy it for <span>$13.99</span></div>
+  		<br>
+  		<a href="/books/details/1" class="button small">Book Details</a>
+  	</div>
+{/body}

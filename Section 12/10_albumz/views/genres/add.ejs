@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+	<h1>Add Genre</h1>
+	<form method="post" action="/genres/add">
+	  <div class="form-group">
+	    <label>Name</label>
+	    <input type="text" class="form-control" name="name" placeholder="Genre Name">
+	  </div>
+	  <button type="submit" class="btn btn-default">Submit</button>
+	   <a class="btn btn-danger" href="/genres">Close</a>
+	</form>
+<% include ../partials/footer %>

@@ -1,0 +1,66 @@
+{>"layouts/manage" /}
+
+{<body}
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Edit Book</h2>
+        <form method="post" action="/manage/books/edit/{book._id}">
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Title
+                <input type="text" name="title" value="{book.title}" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Author
+                <input type="text" name="author" value="{book.author}" />
+              </label>
+            </div>
+            <div class="large-12 columns">
+              <label>Publisher
+                <input type="text" name="publisher" value="{book.publisher}" />
+              </label>
+            </div>
+            <div class="large-12 columns">
+              <label>Price
+                <input type="text" name="price" value="{book.price}" />
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Category
+                <select name="category">
+                {#categories}
+                  <option value="{.name}">{.name}</option>
+                {/categories}
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Description
+                <textarea name="description">{book.description}</textarea>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+                <label>Cover URL
+                  <input name="cover" type="text" value="{book.cover}"/>
+                </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <input type="submit" class="button" value="Submit">
+            </div>
+          </div>
+          <input type="hidden" name="_csrf" value="{_csrf}">
+          </form>
+      </div>  
+    </div>
+{/body}

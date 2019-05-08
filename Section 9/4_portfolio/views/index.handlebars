@@ -1,0 +1,11 @@
+{{#if projects}}
+	{{#each projects}}
+		<div class="column">
+		<img class="thumbnail" src="/images/portfolio/{{image}}">
+		<h5 class="text-center">{{title}}</h5>
+		<p class="text-center show"><a href="/details/{{id}}">Show More</a></p>
+		</div>
+	{{/each}}
+{{else}}
+	<p>No projects</p>
+{{/if}}

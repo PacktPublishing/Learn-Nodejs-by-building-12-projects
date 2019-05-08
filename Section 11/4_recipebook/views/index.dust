@@ -1,0 +1,27 @@
+{>"layout" /}
+
+{<body}
+	{#recipes}
+		<div class="well">
+			<h4>{name} 
+			<button class="btn btn-default pull-right" data-toggle="collapse" href="#recipe_{id}" aria-expanded="false" aria-controls="recipe_{id}">
+			<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+			</button></h4>
+
+			<div class="collapse" id="recipe_{id}">
+			 	<br />
+			 	<br />
+			 	<p><strong>Ingredients: </strong>{ingredients}</p>
+			 	<p><strong>Directions: </strong>{directions}</p>
+			 	<br />
+			 	<hr />
+			 	<button class="btn btn-default edit-recipe">
+			 		<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+			 	</button> 
+			 	<button class="btn btn-danger delete-recipe">
+			 		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+			 	</button>
+			</div>
+		</div>
+	{/recipes}
+{/body}

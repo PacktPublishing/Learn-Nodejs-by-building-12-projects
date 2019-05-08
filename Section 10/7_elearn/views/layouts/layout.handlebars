@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Elearn</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kickstart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="all" />                 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/kickstart.js"></script>                       
+</head>
+<body>
+
+<!-- Menu Horizontal -->
+<ul class="menu">
+<li class="current"><a href="/">Home</a></li>
+<li><a href="/classes">Classes</a></li>
+</ul>
+
+<div class="grid">
+<div class="col_12">
+	<div class="col_9">
+		{{#if success_msg}}
+			<div class="notice success"><i class="icon-remove-sign icon-large"></i> {{success_msg}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+
+		{{#if error_msg}}
+			<div class="notice error"><i class="icon-remove-sign icon-large"></i> {{error_msg}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+
+		{{#if error}}
+			<div class="notice error"><i class="icon-remove-sign icon-large"></i> {{error}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+		{{{body}}}
+	</div>
+	
+	<div class="col_3">
+		{{>login}}
+	</div>
+	
+	<hr />
+	
+		{{>classes}}
+	
+</div>
+
+</div><!-- END GRID -->
+
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
+
+
+</body></html>
